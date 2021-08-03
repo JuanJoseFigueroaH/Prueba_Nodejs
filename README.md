@@ -1,6 +1,6 @@
-# 1234ticket BackEnd v2
+# Prueba NodeJs
 
-BackEnd para el proyecto 1234ticket escrito en Nodejs y express con typescript
+BackEnd para el proyecto prueba escrito en Nodejs y express con typescript
 
 ## Instalación
 
@@ -8,24 +8,6 @@ Instalar dependencias y crear archivo .env basado en .env.example
 
 ```bash
 npm install
-```
-Crear interfaces prisma en base al archivo schema.prisma
-```bash
-npm run generate-types
-```
-OPCION 1: Sincronizar con base de datos con archivo schema.[prisma](https://www.prisma.io/docs/)(sin seeders)
-```bash
-npm run sync-db-tables
-```
-
-OPCION 2: Sincronizar con base de datos con archivo schema.[prisma](https://www.prisma.io/docs/) y archivos de migración(este proceso elimina la base de datos actual y la vuelve a crear)
-```bash
-npm run sync-db-migrate
-```
-
-Popular Base de datos (SEEDERS)
-```bash
-npm run seeds
 ```
 
 Iniciar aplicación modo development
@@ -75,9 +57,3 @@ En cada ruta de la carpeta src/routes se debe llenar la documentación con JsDoc
 providersCatalogRoute.patch('/:id', providersCatalogController.editOne)
 ```
 Please make sure to update tests as appropriate.
-## Seeders
-Comandos seeders:
-```bash
-    npm run seeds *ejecutar los seeders en orden de prioridad
-    npm run seed *ejecutar 1 o mas seeders con linea de comandos
-```
